@@ -27,8 +27,6 @@ function saveRecord(record) {
 }
 
 function uploadEntries() {
-  const NetworkStatusEl = document.getElementById("network-status");
-
   // open a transaction on the pending db
   const transaction = db.transaction(["new_entry"], "readwrite");
   // access your pending object store
